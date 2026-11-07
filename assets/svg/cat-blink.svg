@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="cat-blink-title">
+  <title id="cat-blink-title">Friendly cat face, mid-blink</title>
+  <path fill="#7B4FA8" d="M38 90C34 60 36 36 44 22C66 30 86 48 98 66Z"/>
+  <path fill="#7B4FA8" d="M162 90C166 60 164 36 156 22C134 30 114 48 102 66Z"/>
+  <path fill="#7B4FA8" d="M100 52C140 52 176 78 176 120C176 158 146 180 100 180C54 180 24 158 24 120C24 78 60 52 100 52Z"/>
+  <path fill="#F7A8C4" d="M50 78C48 62 50 50 54 42C66 48 76 58 84 68Z"/>
+  <path fill="#F7A8C4" d="M150 78C152 62 150 50 146 42C134 48 124 58 116 68Z"/>
+  <g fill="none" stroke="#FFF7FB" stroke-width="5" stroke-linecap="round">
+    <path d="M62 118Q74 128 86 118"/>
+    <path d="M114 118Q126 128 138 118"/>
+  </g>
+  <path fill="#E0609A" d="M94 138Q100 134 106 138Q103 144 100 146Q97 144 94 138Z"/>
+  <g fill="none" stroke="#FFF7FB" stroke-width="2.5" stroke-linecap="round">
+    <path d="M100 146Q96 154 90 152M100 146Q104 154 110 152"/>
+  </g>
+  <g stroke="#FFF7FB" stroke-width="1.6" stroke-linecap="round">
+    <path d="M40 134L70 138M40 146L70 146M160 134L130 138M160 146L130 146"/>
+  </g>
+  <circle cx="56" cy="140" r="8" fill="#F7A8C4" opacity="0.6"/>
+  <circle cx="144" cy="140" r="8" fill="#F7A8C4" opacity="0.6"/>
+</svg>

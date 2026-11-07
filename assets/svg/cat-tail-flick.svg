@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-labelledby="cat-tail-flick-title">
+  <title id="cat-tail-flick-title">Cat lying down with tail flicking</title>
+  <g fill="#7B4FA8">
+    <path d="M30 100Q30 84 34 78Q46 88 54 92Z"/>
+    <path d="M50 92Q58 84 66 78Q68 86 66 100Z"/>
+    <circle cx="48" cy="110" r="22"/>
+    <path d="M62 124C62 102 90 96 120 98C152 100 172 110 172 128C172 140 160 144 140 144L70 144C62 144 62 134 62 124Z"/>
+    <ellipse cx="146" cy="124" rx="24" ry="20"/>
+    <ellipse cx="56" cy="142" rx="10" ry="4"/>
+  </g>
+  <path fill="none" stroke="#7B4FA8" stroke-width="9" stroke-linecap="round" d="M168 132C196 126 204 104 186 94C170 86 184 72 200 66C210 62 214 52 208 44"/>
+  <g fill="none" stroke="#E0609A" stroke-width="3" stroke-linecap="round">
+    <path d="M222 58Q228 66 222 74"/>
+    <path d="M230 46Q238 58 230 70"/>
+  </g>
+</svg>

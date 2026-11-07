@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" role="img"><title>Cloud</title>
+<defs>
+<linearGradient id="cloud-a-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffafc"/><stop offset=".55" stop-color="#ffeef5"/><stop offset="1" stop-color="#f7b3cd"/></linearGradient>
+<linearGradient id="cloud-a-s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7a8c4" stop-opacity="0"/><stop offset="1" stop-color="#e888b4" stop-opacity=".45"/></linearGradient>
+</defs>
+<path fill="url(#cloud-a-g)" d="M78 186c-26 0-42-14-36-30 6-8 14-6 22-4 2-34 32-58 66-52 12-42 58-66 100-50 22-38 74-50 112-26 28-26 76-22 98 12 38-8 74 18 76 56 30 2 50 28 44 56-4 22-22 38-46 38H78z"/>
+</svg>

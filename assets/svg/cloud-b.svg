@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" role="img" aria-labelledby="cloud-b-title">
+  <title id="cloud-b-title">Small flat cloud</title>
+  <defs>
+    <linearGradient id="cloud-b-g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.5" stop-color="#FFF7FB"/>
+      <stop offset="1" stop-color="#8EC5F0" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#cloud-b-g1)" d="M40 120C15 120 10 95 28 88C25 65 55 52 75 66C90 35 140 28 160 60C175 40 230 36 245 68C265 55 310 60 315 88C345 84 378 98 366 116C362 124 352 120 340 120Z"/>
+</svg>

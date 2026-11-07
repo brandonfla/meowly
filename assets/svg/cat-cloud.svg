@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460" role="img"><title>A cat sitting on a cloud watching the sunset</title>
+<defs>
+<linearGradient id="cat-cloud-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffafc"/><stop offset=".5" stop-color="#ffedf4"/><stop offset="1" stop-color="#f4a3c4"/></linearGradient>
+<linearGradient id="cat-cloud-b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a2c7a"/><stop offset="1" stop-color="#2c1a4f"/></linearGradient>
+<linearGradient id="cat-cloud-r" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#ffd0b0"/><stop offset="1" stop-color="#ffd0b0" stop-opacity="0"/></linearGradient>
+</defs>
+<!-- body -->
+<path fill="url(#cat-cloud-b)" d="M232 332c-30-6-46-40-40-84 6-46 28-86 58-104l-6-6c-14-10-20-28-18-48l2-34 30 30c10-4 22-6 34-6s22 2 32 5l30-29 2 34c2 22-4 40-20 50 30 18 50 58 54 104 4 46-14 82-46 88-28 6-84 6-112 0z"/>
+<!-- inner ears -->
+<path fill="#e0609a" opacity=".55" d="M226 76l20 22-14 6zM334 76l-20 22 14 6z"/>
+<!-- cloud the cat sits on -->
+<path transform="translate(4 236) scale(.92)" fill="url(#cat-cloud-c)" d="M78 186c-26 0-42-14-36-30 6-8 14-6 22-4 2-34 32-58 66-52 12-42 58-66 100-50 22-38 74-50 112-26 28-26 76-22 98 12 38-8 74 18 76 56 30 2 50 28 44 56-4 22-22 38-46 38H78z"/>
+<!-- tail draped over the cloud -->
+<path fill="none" stroke="url(#cat-cloud-b)" stroke-width="20" stroke-linecap="round" d="M378 252c42-10 72 12 68 46-3 26-26 34-42 22"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img"><title>Cat face with ears flattened sideways</title>
+<!-- airplane ears: pointed, swept flat to the sides -->
+<path fill="#3E6FC4" d="M52 78L4 70l30 34z"/>
+<path fill="#3E6FC4" d="M148 78l48-8-30 34z"/>
+<path fill="#8EC5F0" opacity=".7" d="M44 82l-28-6 18 20z"/>
+<path fill="#8EC5F0" opacity=".7" d="M156 82l28-6-18 20z"/>
+<path fill="#3E6FC4" d="M100 60c44 0 70 26 70 62 0 34-28 58-70 58s-70-24-70-58c0-36 26-62 70-62z"/>
+<!-- wide, wary eyes with tense brows -->
+<circle cx="72" cy="112" r="16" fill="#FFF7FB"/>
+<circle cx="128" cy="112" r="16" fill="#FFF7FB"/>
+<circle cx="72" cy="113" r="10" fill="#1f2a5c"/>
+<circle cx="128" cy="113" r="10" fill="#1f2a5c"/>
+<path d="M56 92l26 8M144 92l-26 8" stroke="#1f2a5c" stroke-width="4" stroke-linecap="round"/>
+<path fill="#E0609A" d="M94 138h12l-6 7z"/>
+<path d="M100 145v6m0 0q-6 6-12 2m12-2q6 6 12 2" fill="none" stroke="#1f2a5c" stroke-width="3" stroke-linecap="round"/>
+<path d="M60 142l-34-4M60 150l-32 6M140 142l34-4M140 150l32 6" stroke="#FFF7FB" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

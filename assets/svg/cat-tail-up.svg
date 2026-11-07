@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-labelledby="cat-tail-up-title">
+  <title id="cat-tail-up-title">Cat walking in profile, tail held up</title>
+  <g fill="#3A2363" stroke="#3A2363" stroke-linecap="round">
+    <path fill="none" stroke-width="12" d="M88 126L80 178M98 126L104 178M150 126L158 178M162 126L172 176"/>
+    <path fill="none" stroke-width="11" d="M176 104C184 84 186 60 186 42C186 30 194 22 206 26"/>
+    <path d="M70 80C90 74 120 74 150 80C172 84 180 100 178 118C176 132 160 138 140 136L90 136C74 136 70 120 72 104Z"/>
+    <circle cx="62" cy="70" r="24"/>
+    <ellipse cx="42" cy="76" rx="10" ry="8"/>
+    <path d="M42 56Q40 36 44 28Q54 40 62 50Z"/>
+    <path d="M56 50Q62 36 68 28Q74 40 78 52Z"/>
+  </g>
+</svg>
