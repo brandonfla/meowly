@@ -45,9 +45,53 @@
         <p class="fact"><img src="assets/svg/paw.svg" alt="">7 tips and 4 body-language signs</p>
         <div><a class="btn" href="#hello">Read the 7 tips <svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1v8"/><path d="M2.5 5.5 6 9l3.5-3.5"/></svg></a></div>
       </div>
-      <div class="hero-art" aria-hidden="true">
+      <div class="hero-art">
         <img class="sun" src="assets/svg/sun.svg" alt="">
-        <img class="cat" src="assets/svg/cat-cloud.svg" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460" role="img" class="sky-cat" aria-labelledby="sky-cat-title"><title id="sky-cat-title">A smiling cat with a heart-shaped nose sitting on a cloud</title>
+        <defs>
+        <linearGradient id="sc-cloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffafc"/><stop offset=".5" stop-color="#ffedf4"/><stop offset="1" stop-color="#f4a3c4"/></linearGradient>
+        <linearGradient id="sc-fur" gradientUnits="userSpaceOnUse" x1="200" y1="40" x2="400" y2="340"><stop offset="0" stop-color="#4c2d7d"/><stop offset="1" stop-color="#2a1849"/></linearGradient>
+        </defs>
+        <!-- ears: each sits on the head's crown and pivots at its base -->
+        <g class="ear ear-l"><g class="ear-twitch">
+        <path fill="url(#sc-fur)" d="M233 112c-4-24-4-48 2-68 2-6 8-7 12-3 14 14 26 30 34 46z"/>
+        <path fill="#e0609a" opacity=".5" d="M243 98c-2-14-2-28 1-40 9 10 17 21 23 32z"/>
+        </g></g>
+        <g class="ear ear-r"><g class="ear-twitch">
+        <path fill="url(#sc-fur)" d="M327 112c4-24 4-48-2-68-2-6-8-7-12-3-14 14-26 30-34 46z"/>
+        <path fill="#e0609a" opacity=".5" d="M317 98c2-14 2-28-1-40-9 10-17 21-23 32z"/>
+        </g></g>
+        <!-- head and body share one gradient in user space, so there is no seam -->
+        <path fill="url(#sc-fur)" d="M280 76c36 0 60 20 64 48 4 26-10 48-38 56-10 3-18 4-26 4s-16-1-26-4c-28-8-42-30-38-56 4-28 28-48 64-48z"/>
+        <path fill="url(#sc-fur)" d="M232 150c-28 34-40 86-38 134 2 36 24 58 56 62h60c32-4 54-26 56-62 2-48-10-100-38-134z"/>
+        <!-- face: closed happy eyes, heart nose, a small w mouth -->
+        <g class="face">
+        <ellipse cx="243" cy="140" rx="10" ry="5.5" fill="#f7a8c4" opacity=".4"/>
+        <ellipse cx="317" cy="140" rx="10" ry="5.5" fill="#f7a8c4" opacity=".4"/>
+        <g fill="#fff7fb" opacity=".1"><ellipse cx="270" cy="150" rx="12" ry="9"/><ellipse cx="290" cy="150" rx="12" ry="9"/></g>
+        <g fill="none" stroke="#fff7fb" stroke-width="4.5" stroke-linecap="round">
+        <path d="M246 124q10-12 20 0"/>
+        <path d="M294 124q10-12 20 0"/>
+        </g>
+        <path fill="#f7a8c4" d="M280 146c-4.5-3-7.5-5.2-7.5-8.2 0-2.3 1.7-3.8 3.8-3.8 1.6 0 2.9.8 3.7 2.2.8-1.4 2.1-2.2 3.7-2.2 2.1 0 3.8 1.5 3.8 3.8 0 3-3 5.2-7.5 8.2z"/>
+        <path fill="none" stroke="#fff7fb" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M280 146v5m0 0q-4 6-10 3m10-3q4 6 10 3"/>
+        <g stroke="#fff7fb" stroke-width="1.7" stroke-linecap="round" opacity=".7">
+        <path d="M262 148l-42-6M262 154l-40 4M298 148l42-6M298 154l40 4"/>
+        </g>
+        </g>
+        <!-- cloud the cat sits on -->
+        <path transform="translate(4 236) scale(.92)" fill="url(#sc-cloud)" d="M78 186c-26 0-42-14-36-30 6-8 14-6 22-4 2-34 32-58 66-52 12-42 58-66 100-50 22-38 74-50 112-26 28-26 76-22 98 12 38-8 74 18 76 56 30 2 50 28 44 56-4 22-22 38-46 38H78z"/>
+        <!-- tail: a base and a tip, jointed so it can swish -->
+        <g class="tail" fill="none" stroke="url(#sc-fur)" stroke-width="20" stroke-linecap="round">
+        <path d="M344 276c38-16 74-12 88 10"/>
+        <g class="tail-tip"><path d="M432 286c10 20 4 42-16 46-12 2-20-6-18-14"/></g>
+        </g>
+        </svg>
+        <button class="cat-pause" type="button" aria-pressed="false" hidden>
+          <svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg>
+          <svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3l8 5-8 5z"/></svg>
+          <span class="sr">Pause the cat’s animation</span>
+        </button>
       </div>
     </div>
   </section>
@@ -165,5 +209,6 @@
     </details>
   </div>
 </footer>
+<script src="assets/sky-cat.js" defer></script>
 </body>
 </html>

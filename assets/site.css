@@ -139,7 +139,27 @@ section > .wrap { z-index: 1; }
 .hero .btn { margin-top: 36px; }
 .hero-art { grid-column: 7 / span 6; position: relative; aspect-ratio: 1 / .86; }
 .hero-art .sun { position: absolute; width: 74%; right: 4%; top: 2%; opacity: .95; }
-.hero-art .cat { position: absolute; width: 92%; left: 4%; bottom: 0; filter: drop-shadow(0 24px 30px rgb(224 96 154 / .25)); }
+.sky-cat { position: absolute; width: 92%; left: 4%; bottom: 0; overflow: visible; filter: drop-shadow(0 24px 30px rgb(224 96 154 / .25)); -webkit-tap-highlight-color: transparent; }
+/* every moving part pivots at its own joint, in the drawing's coordinates */
+.sky-cat :is(.ear, .ear-twitch, .tail, .tail-tip) { transform-box: view-box; }
+.sky-cat .ear-l, .sky-cat .ear-l .ear-twitch { transform-origin: 257px 104px; }
+.sky-cat .ear-r, .sky-cat .ear-r .ear-twitch { transform-origin: 303px 104px; }
+.sky-cat .ear { transition: transform .5s var(--ease); }
+.sky-cat .tail { transform-origin: 344px 276px; }
+.sky-cat .tail-tip { transform-origin: 432px 286px; }
+.cat-pause {
+  position: absolute; right: 2%; bottom: 4%; width: 40px; height: 40px; border-radius: 50%;
+  display: grid; place-items: center; border: 1px solid var(--line); cursor: pointer;
+  background: rgb(255 247 251 / .85); color: var(--ink);
+  transition: transform .25s var(--ease), background-color .25s var(--ease);
+}
+.cat-pause[hidden] { display: none; }
+.cat-pause:hover { transform: translateY(-1px); background: var(--cloud); }
+.cat-pause:active { transform: translateY(1px) scale(.97); }
+.cat-pause svg { width: 16px; height: 16px; fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.cat-pause .i-play, .cat-pause[aria-pressed="true"] .i-pause { display: none; }
+.cat-pause[aria-pressed="true"] .i-play { display: block; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .hero .cloud.c1 { width: min(40vw, 560px); left: -14vw; bottom: -6vh; opacity: .9; }
 .hero .cloud.c2 { width: min(30vw, 400px); right: -4vw; top: 18vh; opacity: .8; }
 .hero .cloud.c3 { width: min(60vw, 820px); left: 20vw; top: 12vh; opacity: .55; }
@@ -156,7 +176,7 @@ section > .wrap { z-index: 1; }
 
 /* the cat's tail sways once when the page opens, then rests */
 @media (prefers-reduced-motion: no-preference) {
-  .hero-art .cat { animation: settle 1.6s var(--ease) both; }
+  .sky-cat { animation: settle 1.6s var(--ease) both; }
   @keyframes settle { from { transform: translateY(10px); opacity: 0; } to { transform: none; opacity: 1; } }
 }
 
