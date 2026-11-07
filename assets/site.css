@@ -147,18 +147,11 @@ section > .wrap { z-index: 1; }
 .sky-cat .ear { transition: transform .5s var(--ease); }
 .sky-cat .tail { transform-origin: 344px 276px; }
 .sky-cat .tail-tip { transform-origin: 432px 286px; }
-.cat-pause {
-  position: absolute; right: 2%; bottom: 4%; width: 40px; height: 40px; border-radius: 50%;
-  display: grid; place-items: center; border: 1px solid var(--line); cursor: pointer;
-  background: rgb(255 247 251 / .85); color: var(--ink);
-  transition: transform .25s var(--ease), background-color .25s var(--ease);
-}
-.cat-pause[hidden] { display: none; }
-.cat-pause:hover { transform: translateY(-1px); background: var(--cloud); }
-.cat-pause:active { transform: translateY(1px) scale(.97); }
-.cat-pause svg { width: 16px; height: 16px; fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.cat-pause .i-play, .cat-pause[aria-pressed="true"] .i-pause { display: none; }
-.cat-pause[aria-pressed="true"] .i-play { display: block; }
+.flyer-layer { position: absolute; inset: 0; overflow: clip; pointer-events: none; z-index: 5; }
+body { position: relative; }
+.flyer { position: absolute; left: 0; top: 0; z-index: 5; pointer-events: none; will-change: transform; }
+.flyer .sky-cat { position: relative; left: auto; bottom: auto; width: 100%; display: block; pointer-events: auto; }
+.flyer.is-flying .sky-cat { pointer-events: none; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .hero .cloud.c1 { width: min(40vw, 560px); left: -14vw; bottom: -6vh; opacity: .9; }
 .hero .cloud.c2 { width: min(30vw, 400px); right: -4vw; top: 18vh; opacity: .8; }

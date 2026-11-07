@@ -1,9 +1,8 @@
 // The hero cat: a slow tail swish, ears that twitch and turn toward the pointer,
-// a happy wag on hover or tap. Rests under reduced motion, pauses off screen.
+// a happy wag on hover or tap. Rests under reduced motion and when off screen.
 (() => {
   const svg = document.querySelector('.sky-cat');
   if (!svg || !svg.animate) return;
-  const btn = document.querySelector('.cat-pause');
   const tail = svg.querySelector('.tail');
   const tip = svg.querySelector('.tail-tip');
   const ears = [svg.querySelector('.ear-l'), svg.querySelector('.ear-r')];
@@ -12,13 +11,12 @@
   const swing = 'cubic-bezier(.45, 0, .55, 1)';
 
   let loops = [];
-  let paused = false;
   let onScreen = true;
   let twitchTimer = 0;
   let wagTimer = 0;
   let frame = 0;
 
-  const live = () => !paused && onScreen && !reduce.matches;
+  const live = () => onScreen && !reduce.matches;
 
   function build() {
     loops = [
@@ -67,7 +65,6 @@
       clearTimeout(twitchTimer);
       setEars(0);
     }
-    if (btn) btn.hidden = reduce.matches;
   }
 
   // ears follow the pointer, like a cat tracking a sound
@@ -98,14 +95,6 @@
     sync();
   }).observe(svg);
 
-  if (btn) {
-    btn.addEventListener('click', () => {
-      paused = !paused;
-      btn.setAttribute('aria-pressed', String(paused));
-      btn.querySelector('.sr').textContent = paused ? 'Play the cat’s animation' : 'Pause the cat’s animation';
-      sync();
-    });
-  }
 
   reduce.addEventListener('change', sync);
   sync();
